@@ -2,7 +2,14 @@ package com.example.aplikasidaftarbukuudin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.samsul.crudroomapp.R
+import android.view.View
+import com.example.aplikasidaftarbukuudin.databinding.ActivityEditBinding
+import com.example.aplikasidaftarbukuudin.room.Constant
+import com.example.aplikasidaftarbukuudin.room.Note
+import com.example.aplikasidaftarbukuudin.room.NoteDB
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class EditActivity : AppCompatActivity() {
     val db by lazy { NoteDB(this) }

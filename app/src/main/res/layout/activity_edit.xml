@@ -11,24 +11,65 @@
         android:id="@+id/edit_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Judul"
+        android:hint="Judul Buku"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/edittextstyle"/>
          />
 
     <EditText
         android:id="@+id/edit_note"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Tulis Catatan"
+        android:hint="Deskripsi Buku"
         android:minLines="3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_title"
         android:layout_marginTop="10dp"
         android:gravity="top"
+        android:background="@drawable/edittextstyle"/>
          />
+    <EditText
+        android:id="@+id/penulis_buku"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Penulis Buku"
+        android:minLines="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_note"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:background="@drawable/edittextstyle"/>
+        />
+    <EditText
+        android:id="@+id/penerbit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Penerbit Buku"
+        android:minLines="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/penulis_buku"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:background="@drawable/edittextstyle"/>
+        />
+    <EditText
+        android:id="@+id/tahun"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tahun Buku"
+        android:minLines="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/penerbit"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:background="@drawable/edittextstyle"/>
+        />
 
     <Button
         android:id="@+id/button_save"
@@ -37,7 +78,7 @@
         android:text="SAVE"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_note"
+        app:layout_constraintTop_toBottomOf="@+id/tahun"
         android:layout_marginTop="20dp" />
 
     <Button
